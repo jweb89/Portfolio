@@ -24,6 +24,32 @@
       }
     }
 
+    #toggle:hover ~ nav {
+      max-height: 200px;
+    }
+    nav:hover {
+      max-height: 200px;
+    }
+    nav {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.15s ease;
+      width: 44%;
+      position: fixed;
+      right: 59px;
+    }
+    ul {
+      padding-left: 0px;
+    }
+
+    .special {
+      max-height: auto;
+      width: 80%;
+      right: 59px;
+      position: fixed;
+      padding-top: 10px;
+    }
+
     &__text {
       text-align: left;
 
@@ -74,22 +100,5 @@
         }
       }
     }
-  }
-  #toggle:hover ~ nav {
-    max-height: 200px;
-  }
-  nav:hover {
-    max-height: 200px;
-  }
-  nav {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.15s ease;
-    width: 44%;
-    position: fixed;
-    right: 59px;
-  }
-  ul {
-    padding-left: 0px;
   }
 }

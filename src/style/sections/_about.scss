@@ -18,6 +18,10 @@
     clip-path: none;
   }
 
+  .round {
+    border-radius: 400px;
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
