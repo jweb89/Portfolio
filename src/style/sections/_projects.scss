@@ -24,30 +24,42 @@
       }
     }
 
-    #toggle:hover ~ nav {
+    & #toggle:hover ~ nav {
       max-height: 200px;
     }
-    nav:hover {
+    & nav:hover {
       max-height: 200px;
     }
-    nav {
+    & nav {
       max-height: 0;
       overflow: hidden;
       transition: all 0.15s ease;
       width: 44%;
       position: fixed;
       right: 59px;
+      @media (max-width: 600px) {
+        position: relative;
+        width: 44%;
+        left: 140px;
+        right: 0px;
+      }
     }
-    ul {
+
+    & ul {
       padding-left: 0px;
     }
 
-    .special {
-      max-height: auto;
+    & .special {
+      max-height: 0px;
       width: 80%;
       right: 59px;
       position: fixed;
       padding-top: 10px;
+      @media (max-width: 600px) {
+        position: relative;
+        width: 100%;
+        left: 20px;
+      }
     }
 
     &__text {
